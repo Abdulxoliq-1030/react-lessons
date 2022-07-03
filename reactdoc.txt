@@ -1,0 +1,143 @@
+WEB saytlar ikki xil usulda yoziladi MAIN PAGE APPLICATION va SINGLE PAGE APPLICATION usullarida
+
+
+=================================
+MAIN PAGE APPLICATION -> bu bizlarni oddiy kopkina yozadigan link orqali ulaydigan HTML filelarimiz 
+
+=================================
+-----------------------------------
+=================================
+ SINGLE PAGE APPLICATION -> bunda kopkina fayllar bilan emas komponentlar bilan yordamida web sahifa yasaymiz bunda bitta file bilan ishlemiz.
+=================================
+
+=================================
+COMPONENTLAR -> component o'zi nima degani savolga component bu foydalanuvchi interfeysini tasvirlaydi yani har bitta bo'limni bo'laklarga bo'lib tashledi ularni qayta ishlatish ham mumkin va boshqa componentlarni ichida ham foydalanish mumkin yani bir birini ichida ham ishlayveradi. 
+COMPONENTLAR -> ikki hil turga bo'linadi [statefullClass] componentalar va [statelessFnksiyonal] componentalar
+=================================
+
+
+
+=================================
+FUNCTIONAL COMPONENTLAR -> funksional componentlar oddiy js funksiyalaridir bu orqali har xil xususiyatlar kiritishimiz mumkin
+================================
+
+
+=================================
+CLASS COMPONENTLAR -> class componentlar funksional componentlarga o'xshedi bunda qo'shimcha OOP ning private public static shunaqa metodlarini foydalanish mumkin bu ancha qulay
+=================================
+
+
+=================================
+Reactda agar funksiyani oldiga export qo'yilsa App.js da chaqirilyakkanda funksiya nomini { Greet } o'rab qo'yish kerak lekin buni o'rniga oddiy default exportdan foydalanish ma'qulroq sanaladi.
+=================================
+
+
+=================================
+Reactda HOOKS -> Reactga hooks lar 16.07 versiyadan qo'shilgan
+=================================
+
+=================================
+JSX -> Bu XML yoki JSON react kutubxonasi bilan js tili sintaksisining kutubxonasi bolib bu react kodimizni sintaksis ko'rinishini osonlashtirib beradi 
+=================================
+
+
+=================================
+PROPS -> buning vazifasi asosiy faylga takrorlanishlarni oldini olish komponentani ichida ishlatiladi bu orqali istagancha o'xshash elementlarni o'zgartirib hohlaganiga  kirishimiz mumkin yani funksiyalarga param berib har xil arg qabul qilgani kabi qisqaroq qilib aytganda dinamik qilib beradi 😅
+
+PROPS ni  oddiy o'zgaruvchilar kabi o'zgartirib bo'medi yani props o'zgarmas bo'ladi.
+=================================
+
+
+=================================
+STATE -> komponent holati ob'ektini yangilashni rejalashtiradi. Holat o'zgarganda, komponent qayta ko'rsatish orqali javob beradi. yani bunda propsga o'xshab o'zgarmas emas bu o'zgaradi.
+=================================
+
+
+=================================
+setState ->  React komponentlari ular bilan bog'langan holatga ega bo'lishi mumkin. Komponentning holati foydalanuvchi tomonidan bajarilgan harakatga javob yoki tizim tomonidan qo'zg'atilgan hodisa tufayli o'zgarishi mumkin. Har safar holat o'zgarganda, React komponentni brauzerga qayta ko'rsatadi. Shtat qiymatini yangilashdan oldin biz dastlabki holat sozlamalarini qurishimiz kerak. Buni tugatgandan so'ng, holat ob'ektini o'zgartirish uchun setState() usulidan foydalanamiz. Bu komponentning yangilanganligini ta'minlaydi va komponentni qayta ko'rsatishni talab qiladi. Eventni eshitadi.
+=================================
+
+
+
+
+=================================
+DESTRUCTING -> buning vazifasi masalan name.john bo'ladigan bo'lsa shuni faqat name o'zi bilan kiradigan qiladi funksiyani parametriga {} qavslarni ichiga name yoki o'rniga boshqa narsa yozlgan bo'lsa shu narsa bilan pastda chaqirishni imkoni mavjud bu imkoniyat ham ES6 da qo'shilgan
+
+
+
+=================================
+EVENT HANDLING -> bu ham js dagidek lekin bazi sintaksislari boshqacharo bo'ladi bu oddiy eventlarni tinglash 
+React da eventlarni elementlarning ichiga bog'layakkanda misol uchun <h1 onClick={eventHandler()}></h1> shunday qilib yozish hato <h1 onClick={eventHandler}></h1> shu ko'rinish tog'ri hisoblanadi agar oldiga qavs qo'yilsa bosilishdan oldin hodisa ishlab ketadi
+=================================
+
+
+
+=================================
+BINDING EVENT HANDLERS -> Berilgan funktsiya uchun asl funktsiya bilan bir xil tanaga ega bo'lgan bog'langan funktsiyani yaratadi. Bog'langan funksiyaning ushbu ob'ekti ko'rsatilgan ob'ekt bilan bog'langan va belgilangan boshlang'ich parametrlarga ega.
+
+=================================
+
+=================================
+List va keylar -> listlarni UI ga chiqarishda bizga key lar kerak chunki har bir element takrorlanmas bolishi kerak shuning uchun ularning id si yoki biron bir takrorlanmas narsasini shu key ga kiritib qo'yishimiz kerak shunda hech qanday chalkashlik bo'lmaydi va dastur xatosiz ishledi.
+
+=================================
+
+
+=================================
+STYLING REACT COMPONENTLAR
+1 -> CSS stylesheets
+2 -> Inline styling
+3 -> CSS Modules
+4 -> CSS in JS Librares
+=================================
+
+
+=================================
+Component Lifecycle metodlar -> 
+1 -> Mounting -> Componentlar yaratilyakkanda yoki DOMga kiritilyakkanda 
+2 -> Updating -> Componentlar o'zgarganda yoki yangilanganda 
+3 -> Unmounting -> Componentlar DOM dan o'chirilyakkanda chaqiriladi
+4 -> Error Handling ->  Ko'rsatish paytida xatolik yuzaga kelganda xatoliklarni hal qilish usullari chaqiriladi
+
+=================================
+
+=================================
+Lifecycle usullari
+#######################
+Mounting -> bunda torta usul mavjud 
+1 -> constructor
+2 -> static getDerivedStateFromProps
+3 -> render
+4 -> componentDidMount
+#######################
+
+
+#######################
+Updating -> bunda beshta usul mavjud
+1 -> static getDerivedStateFromProps
+2 -> shouldComponentUpdate
+3 -> render getSnapshotBeforeUpdate
+4 -> componentDidUpdate
+#######################
+
+#######################
+Unmounting -> bunda bitta usul mavjud
+1 -> componentWillMount
+#######################
+
+#######################
+Error Handling -> bunda 2 ta usul mavjud
+1 -> static getDerivedStateFromError
+2 -> componentDidCatch
+#######################
+
+=================================
+
+=================================
+FRAGMENTS -> buning vazifasi DOMga qo'shimcha node qo'shmasdan child elementlarni ro'yxatlash imkonini beradi 
+=================================
+
+
+=================================
+PURE components -> Buning vazifasi keraksiz renderlarni oldini oladi 
+=================================
