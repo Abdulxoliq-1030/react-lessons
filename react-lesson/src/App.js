@@ -1,9 +1,9 @@
 import "./App.css";
-import Message from "./components/lesson-5-state/Message";
+import Counter from "./components/lesson-6-setState/Counter";
 function App() {
   return (
     <div className="App">
-      <Message />
+      <Counter />
     </div>
   );
 }
