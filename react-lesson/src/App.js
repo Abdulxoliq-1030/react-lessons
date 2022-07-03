@@ -1,10 +1,10 @@
 import "./App.css";
-import Welcome from "./components/lesson-2-class-components/Welcome";
+import Hello from "./components/lesson-3-JSX/Hello";
 
 function App() {
   return (
     <div className="App">
-      <Welcome />
+      <Hello />
     </div>
   );
 }
