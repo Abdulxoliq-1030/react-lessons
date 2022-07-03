@@ -1,10 +1,10 @@
 import "./App.css";
-import Greet from "./components/lesson-1-func-components/Greet";
+import Welcome from "./components/lesson-2-class-components/Welcome";
 
 function App() {
   return (
     <div className="App">
-      <Greet />
+      <Welcome />
     </div>
   );
 }
