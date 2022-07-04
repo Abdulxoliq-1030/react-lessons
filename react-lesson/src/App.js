@@ -1,10 +1,10 @@
 import "./App.css";
-import UserGreeting from "./components/lesson-11-conditional-rendering-operators/UserGreeting";
+import NameList from "./components/lesson-12-list-rendering/NameList";
 
 function App() {
   return (
     <div className="App">
-      <UserGreeting />
+      <NameList />
     </div>
   );
 }
