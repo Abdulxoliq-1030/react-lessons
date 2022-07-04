@@ -1,13 +1,13 @@
 import "./App.css";
-import DesClass from "./components/lesson-7-destructoring-props-state/DesClass";
-import Destructing from "./components/lesson-7-destructoring-props-state/Destructing";
+import ClassClick from "./components/lesson-8-event-handling/ClassClick";
+import FunctionClick from "./components/lesson-8-event-handling/FunctionClick";
 
 function App() {
   return (
-    <div className="App">
-      <Destructing name="Diana" heroName="Wonder Women" />
-      <DesClass name="Bruce" heroName="Batman" />
-    </div>
+    <>
+      <FunctionClick />
+      <ClassClick />
+    </>
   );
 }
 
