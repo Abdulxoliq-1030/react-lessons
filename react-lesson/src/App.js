@@ -1,13 +1,11 @@
 import "./App.css";
-import ClassClick from "./components/lesson-8-event-handling/ClassClick";
-import FunctionClick from "./components/lesson-8-event-handling/FunctionClick";
+import EventBind from "./components/lesson-9-event-bind/EventBind";
 
 function App() {
   return (
-    <>
-      <FunctionClick />
-      <ClassClick />
-    </>
+    <div className="App">
+      <EventBind />
+    </div>
   );
 }
 
