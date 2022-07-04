@@ -26,10 +26,10 @@ clickHandler = () => {
   render() {
     return (
       <div>
-        <div>{this.state.message}</div>
+        {/* <div>{this.state.message}</div> */}
         {/* <button onClick={this.clickHandler.bind(this)}>Click</button> */}
         {/* <button onClick={() => this.clickHandler()}>Click Me</button> */}
-        <button onClick={this.clickHandler}>Click</button>
+        {/* <button onClick={this.clickHandler}>Click</button> */}
       </div>
     );
   }
