@@ -1,10 +1,10 @@
 import "./App.css";
-import LifecycleA from "./components/lesson-15-component-mounting-lifecycle-methods/LifecycleA";
+import FragmentDemo from "./components/lesson-15-fragment/FragmentDemo";
 
 function App() {
   return (
     <div className="App">
-      <LifecycleA />
+      <FragmentDemo />
     </div>
   );
 }
