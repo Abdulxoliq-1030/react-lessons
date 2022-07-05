@@ -1,10 +1,10 @@
 import "./App.css";
-import FragmentDemo from "./components/lesson-15-fragment/FragmentDemo";
+import ParentComp from "./components/lesson-16-pure-component/ParentComp";
 
 function App() {
   return (
     <div className="App">
-      <FragmentDemo />
+      <ParentComp />
     </div>
   );
 }
