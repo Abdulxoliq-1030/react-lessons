@@ -1,10 +1,10 @@
 import "./App.css";
-import Form from "./components/lesson-14-form-handling/Form";
+import LifecycleA from "./components/lesson-15-component-mounting-lifecycle-methods/LifecycleA";
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <LifecycleA />
     </div>
   );
 }
