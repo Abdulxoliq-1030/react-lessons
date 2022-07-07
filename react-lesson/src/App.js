@@ -1,10 +1,10 @@
 import "./App.css";
-import FRParent from "./components/lesson-18-refs/FRParent";
+import PortalDemo from "./components/lesson-19-portals/PortalDemo";
 
 function App() {
   return (
     <div className="App">
-      <FRParent />
+      <PortalDemo />
     </div>
   );
 }
