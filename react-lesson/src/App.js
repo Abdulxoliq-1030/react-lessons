@@ -1,21 +1,12 @@
 import "./App.css";
-import ErrorBoundary from "./components/lesson-20-error-boundary/ErrorBoundary";
-import Hero from "./components/lesson-20-error-boundary/Hero";
+import ClickCounter from "./components/lesson-21-high-order-components/ClickCounter";
+import HoverCounter from "./components/lesson-21-high-order-components/HoverCounter";
 
 function App() {
   return (
     <div className="App">
-      <ErrorBoundary>
-        <Hero heroName="Batman"></Hero>
-      </ErrorBoundary>
-
-      <ErrorBoundary>
-        <Hero heroName="Superman"></Hero>
-      </ErrorBoundary>
-
-      <ErrorBoundary>
-        <Hero heroName="Joker"></Hero>
-      </ErrorBoundary>
+      <ClickCounter />
+      <HoverCounter />
     </div>
   );
 }
